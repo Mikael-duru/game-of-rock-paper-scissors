@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: all .1s ease-in;
+}
+
+.game {
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: .5rem;
+  text-align: center;
+}
+
+.game_title {
+  color: #212121;
+  text-transform: uppercase;
+  letter-spacing: .08rem;
+  font-size: 1.4rem;
+  padding-top: 1rem;
+  padding-bottom: 1.2rem;
+}
+
+.game_container {
+  border: 3px solid #212121;
+  border-radius: 12px;
+  padding: 1.2rem 0 .8rem;
+}
+
+.game_text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: .6rem;
+  margin-bottom: 1.2rem;
+  font-size: 1.2rem;
+}
+
+.game_text-player {
+  color: #ba000d;
+}
+
+.game_text-computer {
+  color: #002984;
+}
+
+.game_text-result {
+  color: #212121;
+  padding: 1rem 0 .5rem;
+}
+
+.game_scores {
+  display: grid;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 1.2rem;
+  padding: .5rem 0;
+}
+
+.game_btns {
+  margin-top: 1.5rem;
+  padding: 0 .4rem;
+}
+
+.game_btn-plays, .game_btn-options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.game_btn-plays {
+  display: none;
+  margin-top: 1.5rem;
+}
+
+.game_btn {
+  line-height: 35px;
+  width: 180px;
+  border: 1px solid;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  font-size: 1rem;
+  color: #304ffe;
+  font-weight: bold;
+}
+
+.game_btn-play:hover, .active {
+  background-color: #304ffe;
+  color: #fff;
+}
+
+.game_btn-option {
+  color: #fff;
+  background: green;
+  margin-top: 2rem;
+}
+
+.game_btn-option:hover {
+  transform: scale(.95);
+}
+
+@media screen and (min-width: 360px){
+  .game_text {
+    margin-bottom: 1.4rem;
+    font-size: 1.4rem;
+  }
+
+  .game_scores {
+    font-size: 1.4rem;
+    padding-bottom: 1rem;
+  }
+
+  .game_btn-plays {
+    flex-wrap: nowrap;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .game_title {
+    font-size: 2rem;
+    padding-top: 4.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .game_container {
+    padding: 1.5rem 0;
+  }
+
+  .game_text {
+    margin-bottom: 1.5rem;
+    font-size: 1.6rem;
+  }
+
+  .game_text-result {
+    margin: 2rem 0;
+  }
+
+  .game_scores {
+    font-size: 1.6rem;
+  }
+
+  .game_btn {
+    line-height: 40px;
+    font-size: 1.4rem;
+  }
+
+  .game_btn-option {
+    margin-top: 3rem;
+  }
+}
