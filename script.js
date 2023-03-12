@@ -35,8 +35,6 @@ startOrExit.onclick = function(){
 // Play Rock-Paper-Scissors Logic
 choiceBtns.forEach(btn => {
   btn.addEventListener("click", () => {
-    // add the class of active
-    btn.classList.add(".active")
     
     // store player's choice
     player = btn.textContent;
