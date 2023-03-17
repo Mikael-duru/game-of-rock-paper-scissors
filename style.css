@@ -6,7 +6,12 @@
   transition: all .1s ease-in;
 }
 
-.game {
+a {
+  text-decoration: none;
+  color: #002984;
+}
+
+.game, footer {
   max-width: 650px;
   margin-left: auto;
   margin-right: auto;
@@ -153,4 +158,9 @@
   .game_btn-option {
     margin-top: 3rem;
   }
+}
+
+footer p {
+  font-size: 14px;
+  padding-top: 1rem;
 }
